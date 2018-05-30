@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -17,6 +18,7 @@ import cn.com.model.UserInfoModel;
 public class mvcController {
 	@Resource
 	UserMapper mapper;
+    @NotNull
     @RequestMapping("/hello")
     public String hello(){ 
     	System.out.println("dddddddddddddddddddd");
